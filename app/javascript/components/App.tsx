@@ -1,0 +1,16 @@
+import * as React from "react";
+import { Route, Switch } from 'react-router-dom';
+import Airline from "./Airline/Airline";
+import Airlines from './Airlines/Airlines';
+
+const App: React.FC<> = () => {
+  return (<Switch>
+
+
+<Route exact path="/" component={Airlines}/>
+<Route exact path="/airlines/:slug" component={Airline}/>
+
+  </Switch>;
+};
+
+export default App;
